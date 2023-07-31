@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Your website description here">
+    <meta name="keywords" content="your, keywords, here">
+    <meta name="author" content="Your Name">
+    <title>days of the week</title>
+</head>
+<body>
+
+    <script>
+        // Get the day number from the user through a prompt box
+        const dayNumberInput = prompt("Enter a number from 1 to 7:\n1 - Sunday\n2 - Monday\n3 - Tuesday\n4 - Wednesday\n5 - Thursday\n6 - Friday\n7 - Saturday");
+        // Convert the input to an integer
+        const dayNumber = parseInt(dayNumberInput);
+        // Check if the input is a valid number between 1 and 7
+        if (!isNaN(dayNumber) && dayNumber >= 1 && dayNumber <= 7) {
+            // Array to store the names of the days
+            const daysOfWeek = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ];
+            const dayName = daysOfWeek[dayNumber - 1];
+            // Display the result
+            alert("The day corresponding to the input number is: " + dayName);
+        } else {
+            // Display an error message if the input is not a valid number between 1 and 7
+            alert("Invalid input. Please enter a valid number from 1 to 7.");
+        }
+    </script>
+</body>
+</html>

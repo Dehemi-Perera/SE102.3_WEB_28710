@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Your website description here">
+    <meta name="keywords" content="your, keywords, here">
+    <meta name="author" content="Your Name">
+    <title>Your Website Title</title>
+</head>
+<body>
+   <h1>Registration Form </h1>
+<form action="/submit_form" method="post"style=" padding: 20px; maxwidth: 400px; 
+margin:auto;">
+<label for="fname"> First Name:</label>
+<input type="text" id="fname" name="fname" required>
+<br>
+<label for="lname"> Last Name:</label>
+<input type="text" id="lname" name="lname" required>
+<br>
+<label for="phone">Mobile Number:</label>
+<input type="tel" id="phone" name="phone" required>
+<br>
+<label>Gender:</label>
+<input type="radio" id="male" name="gender" value="male" required>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required><br>
+<label>Favourite Music:</label> 
+<label for="POP">POP</label>
+<input type="checkbox" id="option1" name="POP" value="value1">
+<label for="Rock">Rock</label>
+<input type="checkbox" id="Rock" name="Rock" value="value2">
+<label for="Other">Other</label>
+<input type="checkbox" id="Other" name="Other" value="value3">
+<br>
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="4" required></textarea>
+<br>
+<input type="checkbox" id="condiotns" name="conditions">
+<label for="condition">I agree to the terms and conditions</label>
+<br>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</form><br><br>
+
+<h1>car registration </h1>
+<form action="/submit_form" method="post" style="display: flex;">
+ <fieldset>
+ <legend>Car Registration</legend>
+<label for="name"> Owner Name:</label>
+<input type="text" id="name" name="name" required><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required><br>
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" required>
+<br>
+<label for="country">Country:</label>
+<select id="country" name="country">
+<option value="" disabled selected>Select your country</option>
+<option value="Sri Lanka ">Sri Lanka </option>
+<option value="Canada">Canada</option>
+<option value="UK">United Kingdom</option>
+</select>
+<br>
+<label for="model "> Car Model</label>
+<input type="text" id="model " name="model " required>
+<br>
+<label for="year ">Manufacture Year </label>
+<select id="year " name="year ">
+<option value="" disabled selected>Select your year</option>
+<option value="2016 ">2016 </option>
+<option value="2017 ">2017 </option>
+<option value="2018 ">2018 </option>
+</select><br>
+<label>Transmission </label>
+<input type="radio" id="Manual " name=" transmission" value="Manual " 
+required>
+<label for="Manual ">Manual</label>
+<input type="radio" id="Auto" name="Transmission " value="Auto ">
+<label for="Auto">Auto </label>
+<br>
+<label for="message">other </label>
+<textarea id="message" name="message" rows="4" required></textarea>
+<br>
+<input type="checkbox" id="agree " name="agree ">
+<label for="agree ">I agree to the conditions and terms </label><br>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+ </fieldset>
+</form>
+
+</body>
+</html>
